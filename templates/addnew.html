@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color:  #4785c2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: lightskyblue;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('addnew') }}">Add New Song</a>
+  <a href="{{ url_for('top100') }}">Top 100 Songs</a>
+  <a href="{{ url_for('topartist') }}">Top Artists</a>
+</div>
+
+<div class="container, main">
+  <br>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+  <h1>Please Enter the Song Features</h1>
+  <form action="" method="post" class="container">
+    <br>
+    <label>Song Title</label>
+    <input type="text" name="title"><br />
+    <br>
+    <label>Artist</label>
+    <input type="text" name="artist"><br />
+    <br>
+    <label>Release Year</label>
+    <input type="text" name="year"><br />
+    <br>
+    <label>Genre</label><br />
+    <select class="container" id='select' name='selectgenre' width:100%>
+      <option value='rap'>Rap</option>
+      <option value='rb'>R&B</option>
+      <option value='rock'>Rock</option>
+      <option value='pop'>Pop</option>
+      <option value='misc'>Misc</option>
+      <option value='country'>Country</option>
+      </select><br>
+      <br>
+    <input class="btn btn-default" type="submit" value="Add">
+  </form>
+</div>
+</body>
+</html>

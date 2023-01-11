@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>millionsong </title>
+
+        <!-- <link rel="stylesheet" href="../css/style.css"> -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- <link rel="stylesheet" href="../css/lightslider.min.css" />                   -->
+        
+        <script type="text/javascript" src="../static/jquery-1.12.2.min.js"></script>
+    
+        <script type="text/javascript" src="../static/lightslider.min.js"/></script>
+
+        
+    <style>
+
+        /*! lightslider - v1.1.3 - 2015-04-14
+        * https://github.com/sachinchoolur/lightslider
+        * Copyright (c) 2015 Sachin N; Licensed MIT */.lSSlideWrapper,.lSSlideWrapper .lSFade{position:relative}.lSSlideWrapper .lSSlide,.lSSlideWrapper.usingCss .lSFade>*{-webkit-transition-timing-function:inherit!important;transition-timing-function:inherit!important;-webkit-transition-duration:inherit!important;transition-duration:inherit!important}.lSSlideOuter,.lSSlideOuter .lSPager.lSGallery{-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-user-select:none}.lSSlideOuter .lSPager.lSGallery:after,.lSSlideWrapper>.lightSlider:after{clear:both}.lSSlideOuter{overflow:hidden;user-select:none}.lightSlider:after,.lightSlider:before{content:" ";display:table}.lightSlider{overflow:hidden;margin:0}.lSSlideWrapper{max-width:100%;overflow:hidden}.lSSlideWrapper .lSSlide{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 1s;-webkit-transition-property:-webkit-transform,height;-moz-transition-property:-moz-transform,height;transition-property:transform,height}.lSSlideWrapper .lSFade>*{position:absolute!important;top:0;left:0;z-index:9;margin-right:0;width:100%}.lSSlideWrapper.usingCss .lSFade>*{opacity:0;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-property:opacity;transition-property:opacity}.lSSlideWrapper .lSFade>.active{z-index:10}.lSSlideWrapper.usingCss .lSFade>.active{opacity:1}.lSSlideOuter .lSPager.lSpg{margin:10px 0 0;padding:0;text-align:center}.lSSlideOuter .lSPager.lSpg>li{cursor:pointer;display:inline-block;padding:0 5px}.lSSlideOuter .lSPager.lSpg>li a{background-color:#222;border-radius:30px;display:inline-block;height:8px;overflow:hidden;text-indent:-999em;width:8px;position:relative;z-index:99;-webkit-transition:all .5s linear 0s;transition:all .5s linear 0s}.lSSlideOuter .lSPager.lSpg>li.active a,.lSSlideOuter .lSPager.lSpg>li:hover a{background-color:#428bca}.lSSlideOuter .media{opacity:.8}.lSSlideOuter .media.active{opacity:1}.lSSlideOuter .lSPager.lSGallery{list-style:none;padding-left:0;margin:0;overflow:hidden;transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;user-select:none}.lSSlideOuter .lSPager.lSGallery li{overflow:hidden;-webkit-transition:border-radius .12s linear 0s .35s linear 0s;transition:border-radius .12s linear 0s .35s linear 0s}.lSSlideOuter .lSPager.lSGallery li.active,.lSSlideOuter .lSPager.lSGallery li:hover{border-radius:5px}.lSSlideOuter .lSPager.lSGallery img{display:block;height:auto;max-width:100%}.lSSlideOuter .lSPager.lSGallery:after,.lSSlideOuter .lSPager.lSGallery:before{content:" ";display:table}.lSAction>a{width:32px;display:block;top:50%;height:32px;background-image:url(../img/controls.png);cursor:pointer;position:absolute;z-index:99;margin-top:-16px;opacity:.5;-webkit-transition:opacity .35s linear 0s;transition:opacity .35s linear 0s}.lSAction>a:hover{opacity:1}.lSAction>.lSPrev{background-position:0 0;left:10px}.lSAction>.lSNext{background-position:-32px 0;right:10px}.lSAction>a.disabled{pointer-events:none}.cS-hidden{height:1px;opacity:0;filter:alpha(opacity=0);overflow:hidden}.lSSlideOuter.vertical{position:relative}.lSSlideOuter.vertical.noPager{padding-right:0!important}.lSSlideOuter.vertical .lSGallery{position:absolute!important;right:0;top:0}.lSSlideOuter.vertical .lightSlider>*{width:100%!important;max-width:none!important}.lSSlideOuter.vertical .lSAction>a{left:50%;margin-left:-14px;margin-top:0}.lSSlideOuter.vertical .lSAction>.lSNext{background-position:31px -31px;bottom:10px;top:auto}.lSSlideOuter.vertical .lSAction>.lSPrev{background-position:0 -31px;bottom:auto;top:10px}.lSSlideOuter.lSrtl{direction:rtl}.lSSlideOuter .lSPager,.lSSlideOuter .lightSlider{padding-left:0;list-style:none}.lSSlideOuter.lSrtl .lSPager,.lSSlideOuter.lSrtl .lightSlider{padding-right:0}.lSSlideOuter .lSGallery li,.lSSlideOuter .lightSlider>*{float:left}.lSSlideOuter.lSrtl .lSGallery li,.lSSlideOuter.lSrtl .lightSlider>*{float:right!important}@-webkit-keyframes rightEnd{0%,100%{left:0}50%{left:-15px}}@keyframes rightEnd{0%,100%{left:0}50%{left:-15px}}@-webkit-keyframes topEnd{0%,100%{top:0}50%{top:-15px}}@keyframes topEnd{0%,100%{top:0}50%{top:-15px}}@-webkit-keyframes leftEnd{0%,100%{left:0}50%{left:15px}}@keyframes leftEnd{0%,100%{left:0}50%{left:15px}}@-webkit-keyframes bottomEnd{0%,100%{bottom:0}50%{bottom:-15px}}@keyframes bottomEnd{0%,100%{bottom:0}50%{bottom:-15px}}.lSSlideOuter .rightEnd{-webkit-animation:rightEnd .3s;animation:rightEnd .3s;position:relative}.lSSlideOuter .leftEnd{-webkit-animation:leftEnd .3s;animation:leftEnd .3s;position:relative}.lSSlideOuter.vertical .rightEnd{-webkit-animation:topEnd .3s;animation:topEnd .3s;position:relative}.lSSlideOuter.vertical .leftEnd{-webkit-animation:bottomEnd .3s;animation:bottomEnd .3s;position:relative}.lSSlideOuter.lSrtl .rightEnd{-webkit-animation:leftEnd .3s;animation:leftEnd .3s;position:relative}.lSSlideOuter.lSrtl .leftEnd{-webkit-animation:rightEnd .3s;animation:rightEnd .3s;position:relative}.lightSlider.lsGrab>*{cursor:-webkit-grab;cursor:-moz-grab;cursor:-o-grab;cursor:-ms-grab;cursor:grab}.lightSlider.lsGrabbing>*{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:-o-grabbing;cursor:-ms-grabbing;cursor:grabbing}
+        
+        /* Style.css */
+        body{
+            background-color: white;
+        }
+
+        header{
+            background-color: #4785c2; 
+            color: white;
+            text-align: left;
+            height: 100px;
+            padding-bottom: 115px;
+            
+        }
+
+        div > #Logo{
+            position:absolute;
+            left:15px;
+            top:15px;
+        }
+
+        #Slogan{
+            padding-left: 45px;   
+        }
+
+        nav {
+            display:flex;
+            justify-content: center;
+        }
+
+        #myMenu ul li a:hover {
+            background-color: lightskyblue;
+            color: white;
+            text-decoration: underline;
+        }
+
+        #myMenu ul li a:active {
+            color: darkblue;
+        }
+
+        main{
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            margin-top : 20px;
+            margin-bottom : 20px;
+            padding: 40px;
+            height: auto;
+            overflow :hidden;
+        }
+
+        #real-footer{
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer{
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer p{
+            margin: 0;
+            font-size:12px;
+        }
+
+        h2,h3{
+            text-align: center;
+        }
+
+        th,tfoot{
+            background-color: #4785c2;
+            color: white;
+        }
+
+
+            
+        form{
+            width: 70%;
+            text-align: left;
+            margin-left: 15%;
+
+        }
+
+
+        /* Original style */
+        nav {
+            display:flex;
+            justify-content: center;
+        }
+ 
+        .main-place-list{
+            list-style-type: none;
+            margin:20px;
+            padding-left:0px;
+        }
+        
+        img.round{
+            border-radius:50%;
+            margin-top:30px;
+            
+        }
+        
+        blockquote{
+            height: auto;
+            overflow :hidden;
+            font-size: 24px;
+            
+        }
+        
+        footer{
+            background-color: white;
+        }
+    </style>
+    
+    </head>
+    
+    <body>
+
+        <div class="container">
+
+            <header>
+
+                <div>
+                        <div class="col-xs-1 col-sm-1">
+                            <img id="Logo" src="../static/Logo.jpg" alt="Logo" height="80" />
+                        </div>
+                        <div class="col-xs-11 col-sm-11" id="Slogan">
+                            <h1>
+                                <div class="col-xs-12">
+                                    Millon Songs |
+                                </div>
+                                <div class="col-xs-12">
+                                    Group 6
+                                </div>
+                            </h1>
+                        </div>
+                </div>
+                
+
+            </header>
+
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#myMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myMenu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{{ url_for('home') }}">Home</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Song List
+                                    <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{{ url_for('addnew') }}">Add New Song</a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('top100') }}">Top 100 songs</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="{{ url_for('topartist') }}">Top Artists</a>
+                        </li>
+
+        
+                    </ul>
+                </div>
+
+            </nav>
+
+
+            <main>
+                <div>
+                    <h2>Welcome to Million Song Dataset!</h2>
+                        
+                    <p>The Million Song Dataset is a freely-available collection of audio features and metadata for a million contemporary popular music tracks.</p>
+                         
+                    
+
+                </div>
+
+                <div>    
+                    <ul id="lightSlider">
+                    
+                        <li><img src="../static/lizzo.jpg" alt="Meeting1" class="img-responsive" width="300"/></li>
+                        <li><img src="../static/numb.jpg" alt="Meeting2" class="img-responsive" width="300"></li>
+                        <li><img src="../static/stay.jpg" alt="Meeting3" class="img-responsive" width="300"></li>
+                        <li><img src="../static/sunroof.jpg" alt="Meeting4" class="img-responsive" width="300"></li>
+                        <li><img src="../static/drake.jpg" alt="Meeting5" class="img-responsive" width="300"></li>
+                
+                    </ul>
+
+                    <h3>You can search for song information</h3>
+                    
+                </div>    
+                
+
+                
+
+                <strong>Find songs by:<br/i></strong>
+                <form class="form-inline" action='getsong' method='POST'>
+                    <div class="form-group">
+                    <input class="form-control" type='text' id='find' name='find' placeholder="Get Song">
+                    </div>
+                    <div class="form-group">
+                    <select class="form-control" id='select' name='select' placeholder="Select by">
+                    <!-- <option value='id'>Song ID</option> -->
+                    <option value='title'>Song title</option>
+                    <option value='artist'>By Artist</option>
+                    <option value='year'>On Release</option>
+                    <option value='tag'>By Genre</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-default">Go</button>
+                    </div>
+                </form> 
+                </br>
+
+
+
+
+               
+            </main>
+
+
+
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#lightSlider").lightSlider({autoWidth:true});
+            });
+        </script>
+    </body>
+</html>
